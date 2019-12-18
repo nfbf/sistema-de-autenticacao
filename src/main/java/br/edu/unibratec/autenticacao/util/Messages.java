@@ -29,5 +29,5 @@ public class Messages {
 	public static final int NOT_FOUND = -1;
 	public static final String USER_NOT_FOUND = "Usuario não encontrado.";
 	public static final String EMAIL_ADMIN = "admin@gmail.com";
-
+	public static final String USERNAME_INACTIVE = "Usuário encontra-se inativo!";
 }

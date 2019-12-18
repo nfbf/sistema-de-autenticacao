@@ -34,7 +34,11 @@ public class AutenticacaoController {
 			resultado = Messages.PASSWORD_MUST_BE_RESET;
 		} else if (usuario.getSituacao().equals(Messages.CONDITION_BLOCKED)) {
 			resultado = Messages.USER_BLOCKED;
-		} else
+		} else if (usuario.getStatus().equalsIgnoreCase(Messages.STATUS_INACTIVE)) {
+			resultado = Messages.USERNAME_INACTIVE;
+		}
+
+		else
 			resultado = (senha.equals(usuario.getSenha())) ? Messages.PASSWORD_IS_CORRECT
 					: Messages.PASSWORD_IS_INCORRECT;
 
